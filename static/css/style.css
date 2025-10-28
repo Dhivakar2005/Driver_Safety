@@ -1,0 +1,10 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+}
+img {
+  border: 3px solid #fff;
+}

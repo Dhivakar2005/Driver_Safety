@@ -1,0 +1,9 @@
+flask
+ultralytics
+opencv-python
+numpy
+pillow
+keras
+mediapipe
+scipy
+tensorflow
