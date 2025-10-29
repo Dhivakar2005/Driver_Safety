@@ -8,7 +8,7 @@ from ultralytics import YOLO
 from keras.models import load_model
 import mediapipe as mp
 from scipy.spatial import distance
-from lane_finding.main import process_pipeline, calibrate_camera
+# from lane_finding.main import process_pipeline, calibrate_camera
 
 # ------------------- Flask Setup -------------------
 app = Flask(__name__)
