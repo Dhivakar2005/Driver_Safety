@@ -4,6 +4,7 @@ lane_finding/
 __pycache__/
 logs/
 .vscode/
+data/
 
 # specific file
 templates/lane.html
