@@ -1,1 +1,31 @@
+# project folders
 trash/
+lane_finding/
+__pycache__/
+logs/
+.vscode/
+
+# specific file
+templates/lane.html
+
+# common Python ignores
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+venv/
+.venv/
+.Python
+
+# packaging/build
+build/
+dist/
+*.egg-info/
+
+# test/artifacts
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db

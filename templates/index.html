@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Road Safety System</title>
-
-  <!-- Bootstrap -->
+  <title>Road Safety System</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
@@ -17,7 +13,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="/">🚗 Smart Road Safety</a>
+      <a class="navbar-brand fw-bold" href="/">Road Safety</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -118,14 +114,35 @@
     </div>
   </section>
 
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 Smart Road Safety | Developed with ❤️ using Flask & AI | 
-      <a href="#hero">Back to Top</a>
-    </p>
+    <p> © 2025 Smart Road Safety </p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      const heroSection = document.getElementById('hero');
+      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+      if (window.scrollY > heroBottom - 100) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
   <script>
     const themeToggle = document.getElementById('themeToggle');
