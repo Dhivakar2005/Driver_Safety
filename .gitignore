@@ -5,7 +5,23 @@ __pycache__/
 logs/
 .vscode/
 data/
+# project artifacts
+models/
+checkpoints/
+outputs/
+results/
+reports/
+notebooks/.ipynb_checkpoints
 
+# IDE/project files
+.idea/
+
+# databases/coverage
+*.sqlite3
+*.db
+.coverage
+coverage.xml
+htmlcov/
 # specific file
 templates/lane.html
 
